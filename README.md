@@ -94,27 +94,27 @@
 #### 本地Docker部署
 
 1. **克隆项目**
-
- 
-   # GitHub
+      GitHub
+   
+   ```bash
    git clone https://github.com/sui117/XianYuAssistant.git
    
    cd xian-yu-assistant
    ```
 
-2. **启动服务**
+3. **启动服务**
 
    ```bash
    docker-compose up -d
    ```
 
-3. **查看日志**
+4. **查看日志**
 
    ```bash
    docker-compose logs -f
    ```
 
-4. **访问应用**
+5. **访问应用**
 
    打开浏览器访问: `http://localhost:12400`
 
