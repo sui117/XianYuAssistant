@@ -30,7 +30,7 @@ COPY --from=frontend-builder /app/src/main/resources/static ./src/main/resources
 RUN mvn clean package -DskipTests
 
 # 阶段3: 运行时镜像
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
