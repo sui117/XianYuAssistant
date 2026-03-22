@@ -12,7 +12,7 @@ COPY vue-code/ ./
 RUN npm run build:spring
 
 # 阶段2: 构建后端
-FROM maven:3.9.9-eclipse-temurin-21 AS builder
+FROM maven:3.9.9-eclipse-temurin-21 AS backend-builder
 
 WORKDIR /app
 
