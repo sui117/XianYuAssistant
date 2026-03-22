@@ -81,47 +81,8 @@
 
 ## 🚀 部署方式
 
-### 方式一：JAR包部署（推荐）
 
-适合快速体验和生产环境使用，无需安装开发环境。
-
-#### 环境要求
-
-- **Java**: 21 或更高版本
-
-#### 部署步骤
-
-1. **下载JAR包**
-
-   前往 [Releases](https://github.com/IAMLZY2018/-XianYuAssistant/releases) 页面下载最新版本的 `xianyu-assistant.jar`
-
-   
-
-2. **启动应用**
-
-   ```bash
-   java -jar xianyu-assistant.jar
-   ```
-
-3. **访问应用**
-
-   打开浏览器访问: `http://localhost:12400`
-
-#### 后台运行（可选）
-
-**Windows:**
-```bash
-start /b java -jar xianyu-assistant.jar
-```
-
-**Linux/Mac:**
-```bash
-nohup java -jar xianyu-assistant.jar &
-```
-
----
-
-### 方式二：Docker部署
+### Docker部署
 
 适合容器化部署和服务器环境，自动完成所有构建步骤。
 
@@ -134,12 +95,9 @@ nohup java -jar xianyu-assistant.jar &
 
 1. **克隆项目**
 
-   ```bash
-   # Gitee (国内推荐)
-   git clone https://gitee.com/lzy2018cn/xian-yu-assistant.git
-   
-   # 或 GitHub
-   git clone https://github.com/IAMLZY2018/-XianYuAssistant.git
+ 
+   # GitHub
+   git clone https://github.com/sui117/XianYuAssistant.git
    
    cd xian-yu-assistant
    ```
@@ -180,12 +138,10 @@ nohup java -jar xianyu-assistant.jar &
 
    ```bash
    cd /opt
-   
-   # Gitee (国内推荐)
-   git clone https://gitee.com/lzy2018cn/xian-yu-assistant.git
+
    
    # 或 GitHub
-   git clone https://github.com/IAMLZY2018/-XianYuAssistant.git
+   git clone https://github.com/sui117/XianYuAssistant.git
    
    cd xian-yu-assistant
    docker compose up -d
@@ -212,12 +168,6 @@ git pull
 docker-compose up -d --build
 ```
 
-#### 更多Docker部署信息
-
-- [完整Docker部署指南](DOCKER_DEPLOY.md) - 详细的Docker配置和故障排查
-- [服务器部署指南](SERVER_DEPLOY.md) - 生产环境部署、Nginx配置、HTTPS等
-
----
 
 ## 📖 使用指南
 
